@@ -1,11 +1,15 @@
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fbfbfb;
+}
 #photos {
     width: 75%;
     height: 70vh;
     margin: auto;
     margin-top: 15vh;
+    margin-bottom: 15vh;
     display: flex;
     flex-direction: row;
-    font-family: 'Ubuntu', sans-serif;
 }
 .photo {
     height: 100%;
@@ -26,7 +30,7 @@
     opacity : 0.60;
     background-color: alpha(opacity=60);
     color: #791609;
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
 .photo>p {
     position: absolute;
@@ -65,4 +69,42 @@
 }
 #p4 {
     background-image: url(http://coleo.themerex.net/wp-content/uploads/2018/01/4-570x518.jpg);
+}
+
+#slider {
+    width: 85%;
+    height: 70vh;
+    margin: auto;
+    margin-top: 20vh;
+    margin-bottom: 15vh;
+}
+.contener {
+    height: 100%;
+    width: 100%;
+}
+.slide {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition-duration: 1s;
+}
+.slide:hover {
+    opacity : 0.60;
+    background-color: alpha(opacity=60);
+    color: #791609;
+    transform: scale(1.05);
+}
+#slide1 {
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2018/01/slide1.jpg);
+}
+#slide2 {
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2018/01/slide2.jpg);
+}
+#slide3 {
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2018/01/slide3.jpg);
+}
+#slide4 {
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2017/12/post-5-copyright-570x518.jpg);
+    filter: brightness(0.9);
 }

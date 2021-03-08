@@ -8,6 +8,9 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css">
+        <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     </head>
     <body>
         <div id="photos">
@@ -28,5 +31,27 @@
                 </div>
             </div>
         </div>
+        <div id="slider" class="glide">
+            <div class="glide__track contener" data-glide-el="track">
+                <ul class="glide__slides contener">
+                    <li id="slide1" class="glide__slide slide"></li>
+                    <li id="slide2" class="glide__slide slide"></li>
+                    <li id="slide3" class="glide__slide slide"></li>
+                    <li id="slide4" class="glide__slide slide"></li>
+                </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-arrow-left"></i></button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-arrow-right"></i></button>
+            </div>
+            <div class="glide__bullets" data-glide-el="controls[nav]">
+                <button class="glide__bullet" data-glide-dir="=0"></button>
+                <button class="glide__bullet" data-glide-dir="=1"></button>
+                <button class="glide__bullet" data-glide-dir="=2"></button>
+                <button class="glide__bullet" data-glide-dir="=3"></button>
+            </div>
+        </div>    
     </body>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="script.js"></script>
 </html>
