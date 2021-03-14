@@ -72,11 +72,11 @@ body {
 }
 
 #slider {
-    width: 85%;
-    height: 70vh;
+    width: 75%;
+    height: 50vh;
     margin: auto;
-    margin-top: 20vh;
-    margin-bottom: 15vh;
+    margin-top: 30vh;
+    margin-bottom: 25vh;
 }
 .contener {
     height: 100%;
@@ -87,24 +87,81 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.mask { 
+    position: relative;
+    width: 100%;
+    height: 100%;
     transition-duration: 1s;
 }
-.slide:hover {
-    opacity : 0.60;
-    background-color: alpha(opacity=60);
-    color: #791609;
-    transform: scale(1.05);
+.mask:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
+.mask:hover .icons>.fas {
+    transition-duration: 10s;
+    display: block;
+}
+.icons {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    color: #ffffff;    
+    text-align: center;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    top: 50%;
+    left: 50%; 
+    transition-duration: 0.25s;
+}
+.icons:hover {
+    background-color: #e5523e;
+}
+.icons>.fas {
+    display: none;
+}
+.iconR>.fas {
+    transform: translate(50%, 50%) rotate(45deg);
+    position: absolute;
+    top: 9%;
+    left: 9%;
+    transition-delay: 5s;
+}
+.iconL>.fas {
+    transform: translate(50%, 50%) rotate(45deg);
+    position: absolute;
+    top: 6%;
+    left: 6%;
+}
+.iconR {
+    margin-left: 1.76em;
+}
+.iconL {
+    margin-left: -1.76em;
+}
+
 #slide1 {
-    background-image: url(http://coleo.themerex.net/wp-content/uploads/2018/01/slide1.jpg);
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2017/12/product-4-copyright.jpg);
 }
 #slide2 {
-    background-image: url(http://coleo.themerex.net/wp-content/uploads/2018/01/slide2.jpg);
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2017/12/product-6-copyright.jpg);
 }
 #slide3 {
-    background-image: url(http://coleo.themerex.net/wp-content/uploads/2018/01/slide3.jpg);
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2017/12/product-7-copyright.jpg);
 }
 #slide4 {
-    background-image: url(http://coleo.themerex.net/wp-content/uploads/2017/12/post-5-copyright-570x518.jpg);
-    filter: brightness(0.9);
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2017/12/product-5-copyright.jpg);
+}
+#slide5 {
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2017/12/product-8-copyright.jpg);
+}
+#slide6 {
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2017/12/product-9-copyright.jpg);
+}
+#slide7 {
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2017/12/product-10-copyright.jpg);
+}
+#slide8 {
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2017/12/product-11-copyright.jpg);
+}
+#slide9 {
+    background-image: url(http://coleo.themerex.net/wp-content/uploads/2017/12/product-12-copyright.jpg);
 }
